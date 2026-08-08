@@ -70,20 +70,20 @@
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://www.holyquranradio.com/#website",
-        "url": "https://www.holyquranradio.com/",
+        "@id": "https://quran-karem.vercel.app/#website",
+        "url": "https://quran-karem.vercel.app/",
         "name": "إذاعة القرآن الكريم من القاهرة بث مباشر",
         "description": "الاستماع إلى راديو إذاعة القرآن الكريم من القاهرة بث مباشر MP3 بلا انقطاع.",
         "inLanguage": "ar",
         "publisher": {
-          "@id": "https://www.holyquranradio.com/#organization"
+          "@id": "https://quran-karem.vercel.app/#organization"
         }
       },
       {
         "@type": "RadioStation",
-        "@id": "https://www.holyquranradio.com/#organization",
+        "@id": "https://quran-karem.vercel.app/#organization",
         "name": "إذاعة القرآن الكريم من القاهرة",
-        "url": "https://www.holyquranradio.com/",
+        "url": "https://quran-karem.vercel.app/",
         "logo": {
           "@type": "ImageObject",
           "url": "https://i.imgur.com/8Pznvic.jpg",
@@ -104,20 +104,20 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.holyquranradio.com/#webpage",
-        "url": "https://www.holyquranradio.com/",
+        "@id": "https://quran-karem.vercel.app/#webpage",
+        "url": "https://quran-karem.vercel.app/",
         "name": "إذاعة القرآن الكريم من القاهرة بث مباشر",
         "isPartOf": {
-          "@id": "https://www.holyquranradio.com/#website"
+          "@id": "https://quran-karem.vercel.app/#website"
         },
         "about": {
-          "@id": "https://www.holyquranradio.com/#organization"
+          "@id": "https://quran-karem.vercel.app/#organization"
         },
         "primaryImageOfPage": {
-          "@id": "https://www.holyquranradio.com/#primaryimage"
+          "@id": "https://quran-karem.vercel.app/#primaryimage"
         },
         "image": {
-          "@id": "https://www.holyquranradio.com/#primaryimage"
+          "@id": "https://quran-karem.vercel.app/#primaryimage"
         },
         "thumbnailUrl": "https://i.imgur.com/8Pznvic.jpg",
         "datePublished": "2020-01-01T00:00:00+02:00",
@@ -144,7 +144,7 @@
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.holyquranradio.com/#primaryimage",
+        "@id": "https://quran-karem.vercel.app/#primaryimage",
         "url": "https://i.imgur.com/8Pznvic.jpg",
         "contentUrl": "https://i.imgur.com/8Pznvic.jpg",
         "width": 1200,
@@ -598,7 +598,7 @@
       }
 
       // ====== 3. Share Buttons ======
-      const pageUrl   = encodeURIComponent('https://www.holyquranradio.com/');
+      const pageUrl   = encodeURIComponent('https://quran-karem.vercel.app/');
       const shareText = encodeURIComponent('استمع إلى إذاعة القرآن الكريم من القاهرة بث مباشر');
 
       document.querySelector('.share-btn.facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
@@ -607,7 +607,7 @@
 
       document.querySelector('.share-btn.copy').addEventListener('click', function(e) {
         e.preventDefault();
-        const link = 'https://www.holyquranradio.com/';
+        const link = 'https://quran-karem.vercel.app/';
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(link).then(() => {
             const orig = this.textContent;
